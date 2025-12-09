@@ -1,5 +1,5 @@
 
-# Lab 11 – Splunk Cyber Kill Chain Investigation (Objectives 1-7)
+# Lab 11 – Splunk Web Defacement Investigation – Joomla Admin Brute-Force (Objectives 1-7)
 
 <details>
   <summary><b>📘 Table of Contents</b></summary>
@@ -1284,5 +1284,6 @@ This investigation helped me understand how SIEM tools like Splunk can be used t
 </details>
 
 ---
+
 
 
