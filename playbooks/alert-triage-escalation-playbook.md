@@ -1,4 +1,4 @@
-# 🛡️ Playbook: Alert Triage and Escalation Workflow
+# Runbook: Alert Triage and Escalation Workflow
 
 ## Overview  
 Process for analyzing security alerts, prioritizing incidents, and escalating appropriately.
