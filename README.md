@@ -1,244 +1,185 @@
 # Cybersecurity & IT Operations Portfolio
 
-Welcome to the part of my GitHub where I’m teaching myself how to work across cybersecurity and IT operations. Nothing here is meant to look perfect. It’s basically where I learn by doing — breaking things, fixing them, chasing weird logs, and slowly figuring out how real investigations and day-to-day IT work actually feel.
+This repository serves as the **central hub and navigation guide** for my hands-on cybersecurity and IT operations portfolio.  
 
-This repo is my running record of that process. I’m practicing everything from SIEM searches and log analysis to scripting, network traffic reviews, and basic system administration tasks. Some labs go smoothly, some definitely don’t, but that’s the whole point — I want to understand how things really behave, not just how they’re “supposed” to work.
+All labs, investigations, workflows, and playbooks are organized across multiple repositories, each focused on a different aspect of real-world security operations and incident response.
 
-You’ll notice the labs are numbered. That’s intentional.
-They follow the order I wanted to learn things:
-
-Early labs = fundamentals
-
-Later labs = more noise, more steps, more pivot points, more places to get things wrong
-
-As the numbers go up, the investigations start to feel more real: multi-stage activity, correlating different log sources, piecing timelines together, tuning searches, checking assumptions, and actually explaining what happened instead of just guessing.
+The goal of this portfolio is to demonstrate not only tool usage, but also **analyst reasoning, investigation methodology, detection engineering thinking, and operational documentation practices** aligned with real SOC and IR environments.
 
 ---
 
-## What’s Inside
+### How This Portfolio Is Organized
 
-<h3>Labs → (labs/)</h3> Hands-on labs covering cybersecurity, IT ops, scripting, and investigation-style problem solving. Each one walks through what I saw, what I thought it meant, what actually happened, and how I figured it out. Some are quick. Some took forever. All of them taught me something.
-<br/><br/>
+My work is split into **three primary areas**, each with its own repository and documentation structure:
 
-Currently includes:
+| Area | Focus | Repository |
+|--------|--------|------------|
+| Incident Response & Investigations | End-to-end case investigations with evidence, analysis, reporting, and recommendations |  **incident-response-and-investigations** |
+| Security Operations Workflows | Task-based SOC workflows and repeatable analyst procedures |  **security-operations-workflows** |
+| SOC Playbooks & Procedures | Operational response playbooks and escalation procedures (work in progress) |  **soc-playbooks-and-procedures** |
 
-<details>
-<summary><b>Systems & Endpoints</b></summary>
-
-> <details>
-> <summary>Linux</summary>
->
-> - <a href="labs/systems-and-endpoints/Lab01-linux-shell-and-scripting-basics/Lab01-linux-shell-and-scripting-basics.md">Lab01 – Linux Shell and Scripting</a><br/>
->   A hands-on introduction to core Linux commands, navigation, and automation. I wrote small Bash scripts using variables, loops, and conditionals to automate repetitive tasks. This lab strengthened my command-line comfort and problem-solving mindset. Building Bash scripts that apply variables, user input, conditional logic, and iterative loops to automate decision-making and repetitive tasks in a Linux environment.
->
-> </details>
-
-> <details>
-> <summary>Windows CMD/CLI</summary>
->
-> - <a href="labs/systems-and-endpoints/Lab02-windows-cli-endpoint-triage-basics/Lab02-windows-cli-endpoint-triage-basics.md">Lab02 – Windows CMD - File Discovery, Network & Process Investigation</a><br/>
->   Used Windows command-line tools to investigate system behavior, look up running processes, review basic host information, and spot suspicious activity. This lab helped me understand what normal endpoint behavior looks like and how to manually triage a Windows machine.
-> </details>
-
-> <details>
-> <summary>PowerShell</summary>
->
-> - <a href="labs/systems-and-endpoints/Lab03-powershell-endpoint-triage-basics/Lab03-powershell-endpoint-triage-basics.md">Lab03 – PowerShell Endpoint Triage</a><br/>
->   Collected and filtered system data using PowerShell, focusing on processes, services, and event logs. I practiced identifying patterns that could indicate malicious activity. This lab sharpened my ability to use PowerShell for real investigation workflows.
-> </details>
-
-
-</details>
-
-
-
-<details>
-<summary><b>Identity and Access Management</b></summary>
-
-> <details>
-> <summary>Active Directory</summary>
->
-> - <a href="labs/identity-and-access-management/Lab04-active-directory-identity-and-access-management/Lab04-active-directory-identity-and-access-management.md">Lab04 – Active Directory Domain Structure and Administration</a><br/>
->   Explored how real enterprise AD environments are structured, including users, OUs, groups, and authentication flows. I created accounts, adjusted permissions, and experimented with Group Policy. This lab helped connect theoretical AD concepts to real hands-on configuration.
->
-> </details>
-
-
-</details>
-
-<details>
-<summary><b>Networking and Traffic Analysis</b></summary>
-
-> <details>
-> <summary>tcpdump</summary>
->
-> - <a href="labs/networking-and-traffic-analysis/Lab05-tcpdump-packet-capture-and-filtering/Lab05-tcpdump-packet-capture-and-filtering.md">Lab05 – Tcpdump Packet Capture and Filtering</a><br/>
->   Captured live network traffic using tcpdump and analyzed packet details through filters. I learned how to isolate meaningful traffic from noise and understand key packet fields. This lab built a foundation for packet-level monitoring and troubleshooting.
->
-> </details>
-
-> <details>
-> <summary>WireShark</summary>
->
-> - <a href="labs/networking-and-traffic-analysis/Lab06-wireshark-packet-analysis-and-filtering/Lab06-wireshark-packet-analysis-and-filtering.md">Lab06 – Wireshark Packet Analysis and Filtering</a><br/>
->   Used Wireshark to inspect packets visually, apply powerful filters, and interpret network behavior. I practiced recognizing normal patterns vs. anomalies. This lab improved my ability to analyze network data beyond the command line.
->
-> </details>
-
-</details>
-
-
-<details>
-<summary><b>Log Analysis & Automation</b></summary>
-
-> <details>
-> <summary>Python Log Parsing & Security Analysis</summary>
->
-> - <a href="labs/log-analysis-and-automation/Lab07-python-log-parsing-and-security-analysis/Lab07-python-log-parsing-and-security-analysis.md">Lab07 – Python Log Parsing & Security Analysis</a><br/>
->   Wrote Python scripts to parse and analyze logs from Apache, SSH, Windows, and AWS CloudTrail. Automated detection of failed logins, scanning activity, and other suspicious patterns. This lab showed how scripting can speed up investigations and reduce human error.
->
-> </details>
-
-</details>
-
-
-<details>
-<summary><b>Monitoring and SIEM</b></summary>
-
-> <details>
-> <summary>Investigations</summary>
->
-> - <a href="labs/monitoring-and-siem/investigations/Lab08-siem-suspicious-process-investigation/Lab08-suspicious-process-investigation.md">Lab08 – Suspicious Process Investigation</a><br/>
->   Performed a basic SIEM investigation into unusual process activity. Followed breadcrumbs across event logs to identify what happened and why it looked suspicious. This lab established my workflow for triage and hypothesis-driven analysis.
->
-> </details>
-
-> <details>
-> <summary>Splunk</summary>
->
-> - <a href="labs/monitoring-and-siem/splunk/Lab09-splunk-vpn-log-analysis-basics/Lab09-splunk-vpn-log-analysis-basics.md">Lab09 – Splunk VPN Log Analysis Basics</a><br/>
->   Used Splunk to analyze VPN authentication logs and identify risky login patterns. Looked at user behavior, location anomalies, and signs of potential account compromise. A solid introduction to real-world access monitoring in Splunk.
->
-> - <a href="labs/monitoring-and-siem/splunk/Lab10-splunk-data-processing-and-parsing-basics/Lab10-splunk-data-processing-and-parsing-basics.md">Lab10 – Splunk Data Processing & Parsing Basics</a><br/>
->   Learned how Splunk ingests and transforms data using inputs.conf, props.conf, and transforms.conf. Worked with field extractions and parsing rules to improve log quality. This lab made Splunk feel less like a “black box” and more like a system I can configure intelligently.
->
-> - <a href="labs/monitoring-and-siem/splunk/Lab11-splunk-cyber-kill-chain-investigation/Lab11-splunk-cyber-kill-chain-investigation.md">Lab11 – Splunk Cyber Kill Chain Investigation</a><br/>
->   Conducted a full investigation of a simulated web-server compromise by mapping activity across every phase of the Cyber Kill Chain. Correlated IDS alerts, web logs, and DNS data to reconstruct attacker behavior. This lab built my ability to handle multi-stage intrusions using Splunk.
->
-> - <a href="labs/monitoring-and-siem/splunk/Lab12-splunk-backdoor-and-registry-investigation/Lab12-splunk-backdoor-and-registry-investigation.md">Lab12 – Splunk Backdoor and Registry Investigation</a><br/>
->   Investigated a complex intrusion involving backdoor account creation, suspicious registry modifications, WMIC abuse, and encoded PowerShell payloads. Decoded and traced attacker actions across multiple log sources. This was one of my most advanced labs and reflects real SOC-level investigation depth.
-> </details>
-
-
-</details>
-
-
-
-
-<h3>Playbooks → (playbooks/)</h3> Step-by-step response guides I’ve written for common security events. These are structured like SOC playbooks to help with incident triage, investigation, and response.
-Currently includes:
-<br/><br/>
-<details>
-<summary><b>Account Lockouts</b></summary>
-
-> - <a href="playbooks/account-lockout-investigation-playbook.md">Account lockouts</a><br/>
->Troubleshoot repeated account lockouts and investigate potential account compromise.
-</details>
-
-<details>
-  
-<summary><b>Alert Triage Escalation</b></summary>
-
-> - <a href="playbooks/alert-triage-escalation-playbook.md">Alert Escalation</a><br/>
->Process for analyzing security alerts, prioritizing incidents, and escalating appropriately.
-
-</details>
-
-<details>
-  
-<summary><b>Data Exfiltration Investigation</b></summary>
-
-> - <a href="playbooks/data-exfiltration-investigation-playbook.md">Data Exfiltration Investigation</a><br/>
->Identify and respond to suspicious data transfers or large unauthorized uploads.
-
-</details>
-
-<details>
-  
-<summary><b>Email Phishing Attempt</b></summary>
-
-> - <a href="playbooks/email-phishing-playbook.md">Email Phishing Attempt</a><br/>
->Identify, contain, and remediate phishing email incidents.
-
-</details>
-
-<details>
-  
-<summary><b>Malware Detection and Response</b></summary>
-
-> - <a href="playbooks/malware-detection-response-playbook.md">Malware Detection and Response</a><br/>
->Steps to identify, isolate, and remediate malware infections on endpoints to minimize impact.
-
-</details>
-
-<details>
-  
-<summary><b>Suspicious Network Traffic Analysis</b></summary>
-
-> - <a href="playbooks//suspicious-network-traffic-analysis-playbook.md">Suspicious Network Traffic Analysis</a><br/>
->Detect and investigate anomalies in network traffic such as unexpected outbound connections.
-
-</details>
-
-<details>
-  
-<summary><b>Suspicious Login or Access Attempt</b></summary>
-
-> - <a href="playbooks/unauthorized-access-detection-playbook.md">Suspicious Login or Access Attempt</a><br/>
->Identify, respond to, and mitigate unauthorized or suspicious login attempts on production systems or cloud platforms.
-
-</details>
-
-<details>
-  
-<summary><b>Unauthorized USB Device Detection</b></summary>
-
-> - <a href="playbooks/unauthorized-usb-detection-playbook.md">Unauthorized USB Device Detection</a><br/>
->Investigate alerts triggered by unknown USB devices connecting to endpoints.
-
-</details>
-
+Each repository is intentionally structured differently because they model **different real-world security functions**:
+- investigations focus on **case narratives and response outcomes**
+- workflows focus on **repeatable analyst tasks and tooling**
+- playbooks focus on **operational response guidance**
 
 ---
 
-## Skills I'm Practicing
+###  (1) Incident Response & Investigations
 
-- Reading and analyzing SIEM logs (Splunk, general SIEM concepts)  
-- Identifying suspicious or abnormal activity  
-- Writing structured investigation notes and playbooks  
-- Documenting technical work clearly for others to follow  
-- Building up complexity across labs (introductory → intermediate → advanced)
-- Documenting investigations like an analyst
-- Basic Bash & PowerShell scripting
-- Running packet captures and reading network traffic
-- Windows & Linux triage
-- Building playbooks and repeatable processes
-- Steadily increasing complexity across labs
+**Repository:** `incident-response-and-investigations`
+
+This repo contains full **case-style investigations** designed to simulate how incidents are handled in real SOC and IR teams.
+
+Each investigation is structured as a **self-contained case file**, including:
+- step-by-step investigation walkthroughs
+- incident summaries and executive-style reports
+- detection artifacts and engineering notes
+- hardening and prevention recommendations
+- MITRE ATT&CK technique mapping
+
+#### Investigation Categories
+
+Investigations are grouped by attack type and intrusion phase:
+
+| Category | What It Covers |
+|--------|------------------|
+| Endpoint Compromise & Persistence | Malware execution, registry and startup persistence, scheduled tasks, host-based artifacts |
+| Identity & Email Compromise | Phishing, mailbox abuse, account takeover, suspicious authentication activity |
+| Intrusion & Lateral Movement | Network-based compromise, credential access, internal pivoting techniques |
+| Web Application Compromise | Web shell deployment, vulnerable services, attacker interaction with servers |
+
+Each category folder contains multiple investigations, and **each investigation uses the same standardized case structure** to reflect real incident documentation workflows.
+
+#### Standard Investigation Case Files
+
+Every investigation includes the following documents:
+
+- `README.md` — scenario overview, data sources, tools, and objectives  
+- `investigation-walkthrough.md` — detailed technical analysis and evidence validation  
+- `incident-summary.md` — concise incident overview and key findings  
+- `incident-response-report.md` — formal IR-style response documentation  
+- `case-report.md` — combined narrative of attack timeline and impact  
+- `detection-artifact-report.md` — detection logic, queries, and indicators  
+- `detection-and-hardening-recommendations.md` — prevention and control improvements  
+- `MITRE-ATT&CK-mapping.md` — technique mapping and adversary behavior alignment  
+
+This structure mirrors how SOC analysts, detection engineers, and IR teams collaborate across **technical analysis, reporting, and security improvement planning**.
+
+👉 **Start here:**  
+`incident-response-and-investigations/`
 
 ---
 
-## Roadmap / Coming Soon
+### (2) Security Operations Workflows
 
-This repo will continue to grow as I add more content, including:  
-- Additional SIEM labs (ELK stack, more Splunk scenarios)  
-- Network analysis labs (Wireshark, packet capture)  
-- Scanning/recon labs (Nmap, basic vulnerability discovery)  
-- Expanded incident response playbooks  
+**Repository:** `security-operations-workflows`
+
+This repo focuses on **task-first SOC workflows** — the repeatable procedures analysts perform during monitoring, triage, and investigations.
+
+Instead of full incidents, these labs model:
+- how analysts interact with tools
+- what questions they ask during triage
+- how alerts and logs are validated
+- how findings are documented for handoff or escalation
+
+These workflows are intentionally written so they could later be translated into:
+- SIEM detections
+- automation pipelines
+- SOAR playbooks
+
+#### Workflow Categories
+
+Workflows are grouped by operational function:
+
+| Category | What It Covers |
+|--------|------------------|
+|  Detection Automation & Log Processing | Custom parsing, enrichment, behavioral signal development |
+|  Endpoint Triage | Host artifact review, process analysis, persistence checks |
+|  Identity & Access | Authentication review, account misuse detection, IAM validation |
+|  Network Traffic Analysis | Packet inspection, suspicious flow detection, protocol analysis |
+|  SIEM Detection & Log Analysis | Alert triage, query development, investigation pivots |
+|  Vulnerability Management | Exposure assessment, remediation validation, risk prioritization |
+
+### Standard Workflow Files
+
+Each workflow includes:
+
+- `README.md` — workflow scope, scenario, tools, and learning objectives  
+- `workflow-execution.md` — step-by-step analyst actions and validation logic  
+- `analyst-notes.md` — reasoning, hypotheses, and investigation thinking  
+- `tool-usage-notes.md` — detailed documentation of how each tool was used and configured  
+
+Some workflows (such as custom Python log analysis) also include:
+
+- `automation-design-notes.md` — discussion of how manual analysis could translate into scalable detections or pipelines
+
+These workflows are designed to show **how analysts think, not just what buttons they click**.
+
+👉 **Start here:**  
+`security-operations-workflows/`
 
 ---
 
-## Note
+### (3) SOC Playbooks & Procedures (In Progress)
 
-This repo exists so I can learn, stay consistent, and get better at security and IT operational work over time.
-<br></br>
-Feedback is always welcome.
+**Repository:** `soc-playbooks-and-procedures`
+
+This repository contains **operational playbooks** focused on how security teams respond once suspicious or malicious activity is confirmed.
+
+These documents model:
+- escalation paths
+- containment steps
+- communication procedures
+- evidence handling practices
+
+This repo is still under active development and will continue expanding as additional scenarios and response flows are added.
+
+👉 **View playbooks:**  
+`soc-playbooks-and-procedures/`
+
+---
+
+### Recommended Entry Points
+
+If you are reviewing this portfolio for the first time, these are good places to start:
+
+#### Investigation Examples
+- Endpoint persistence investigation (registry / startup abuse)
+- Identity compromise investigation with authentication log correlation
+- Web server compromise with attacker command execution
+
+#### Workflow Examples
+- Python-based log parsing and behavioral detection workflow
+- SIEM alert triage with multi-source pivoting
+- Endpoint triage workflow for suspicious persistence mechanisms
+
+(Each of the above can be found directly within the repositories linked above.)
+
+---
+
+### What This Portfolio Demonstrates
+
+Across all repositories, this work is designed to demonstrate:
+
+- Incident investigation methodology
+- Evidence-based validation of alerts and suspicious behavior
+- Detection logic development and tuning
+- Documentation practices used in real SOC and IR teams
+- Mapping of technical findings to security frameworks
+- Transition from manual analysis toward detection engineering and automation
+
+Rather than focusing on isolated tools, the emphasis is on **process, reasoning, and operational realism**.
+
+---
+
+### Ongoing Development
+
+This portfolio is actively evolving. Planned future additions include:
+
+- Additional end-to-end incident investigations
+- Expanded automation design documentation
+- More SOC operational playbooks
+- Detection engineering–focused workflows
+
+Updates are added continuously as new labs and scenarios are completed.
