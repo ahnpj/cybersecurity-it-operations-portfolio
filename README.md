@@ -70,10 +70,7 @@ Instead of full incidents, these workflows model:
 - how investigation pivots are performed
 - how findings are documented for escalation or handoff
 
-These workflows are written so they can later be translated into:
-- SIEM detections
-- automation pipelines
-- SOAR playbooks
+These workflows are written so they can later be translated into SIEM detections, automation pipelines, and SOAR playbooks.
 
 #### Workflow Categories
 
