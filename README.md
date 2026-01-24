@@ -64,7 +64,6 @@ Each category folder contains multiple investigations, and **each investigation 
 
 This repository focuses on **task-first SOC workflows** — the repeatable procedures analysts perform during monitoring, triage, and investigation activities. These workflows are written so they can later be translated into SIEM detections, automation pipelines, and SOAR playbooks.
 
-
 Instead of full incidents, these workflows model:
 - how analysts interact with security and monitoring tools
 - how alerts and telemetry are validated
@@ -93,11 +92,9 @@ Each workflow includes:
 - `analyst-notes.md` — reasoning, hypotheses, and investigative thought process  
 - `tool-usage-notes.md` — detailed documentation of how each tool was used and configured  
 
-Some workflows (such as custom Python log analysis) also include:
+These workflows are designed to show **how analysts think, not just what actions they perform**. Some workflows (such as custom Python log analysis) also include:
 
 - `automation-design-notes.md` — discussion of how manual analysis could translate into scalable detections or enrichment pipelines
-
-These workflows are designed to show **how analysts think, not just what actions they perform**.
 
 👉 **Start here:**  
 `security-operations-workflows/`
