@@ -62,15 +62,14 @@ Each category folder contains multiple investigations, and **each investigation 
 
 **Repository:** `security-operations-workflows`
 
-This repository focuses on **task-first SOC workflows** — the repeatable procedures analysts perform during monitoring, triage, and investigation activities.
+This repository focuses on **task-first SOC workflows** — the repeatable procedures analysts perform during monitoring, triage, and investigation activities. These workflows are written so they can later be translated into SIEM detections, automation pipelines, and SOAR playbooks.
+
 
 Instead of full incidents, these workflows model:
 - how analysts interact with security and monitoring tools
 - how alerts and telemetry are validated
 - how investigation pivots are performed
 - how findings are documented for escalation or handoff
-
-These workflows are written so they can later be translated into SIEM detections, automation pipelines, and SOAR playbooks.
 
 #### Workflow Categories
 
@@ -109,15 +108,14 @@ These workflows are designed to show **how analysts think, not just what actions
 
 **Repository:** `soc-playbooks-and-procedures`
 
-This repository contains **operational playbooks** focused on how security teams respond once suspicious or malicious activity is confirmed.
+This repository contains **operational playbooks** focused on how security teams respond once suspicious or malicious activity is confirmed. This repository is under active development and will continue expanding as additional response scenarios and procedures are added.
+
 
 These documents model:
 - escalation paths and decision points
 - containment and remediation steps
 - communication procedures
 - evidence handling and documentation practices
-
-This repository is under active development and will continue expanding as additional response scenarios and procedures are added.
 
 **View playbooks:**  
 `soc-playbooks-and-procedures/`
@@ -144,15 +142,13 @@ If you are reviewing this portfolio for the first time, the following are good p
 
 ### What This Portfolio Demonstrates
 
-Across all repositories, this work is designed to demonstrate:
+Rather than focusing on isolated tools, the emphasis is on **process, reasoning, and operational realism**. Across all repositories, this work is designed to demonstrate:
 
 - Incident investigation methodology and evidence validation
 - Detection logic development and tuning
 - Operational documentation and reporting practices
 - Mapping of technical findings to security frameworks
 - Transition from manual investigation toward detection engineering and automation
-
-Rather than focusing on isolated tools, the emphasis is on **process, reasoning, and operational realism**.
 
 ---
 
