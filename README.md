@@ -29,9 +29,8 @@ Each repository is intentionally structured differently because they model **dis
 
 **Repository:** `incident-response-and-investigations`
 
-This repository contains full **case-style investigations** designed to simulate how incidents are handled in real SOC and incident response teams.
+This repository contains full **case-style investigations** designed to simulate how incidents are handled in real SOC and incident response teams. Each investigation is structured as a **self-contained case file**, including:
 
-Each investigation is structured as a **self-contained case file**, including:
 - detailed investigation walkthroughs and evidence validation
 - incident summaries and executive-style overviews
 - formal incident response reports
