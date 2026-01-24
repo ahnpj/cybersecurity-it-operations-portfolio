@@ -39,9 +39,7 @@ This repository contains full **case-style investigations** designed to simulate
 - detection and hardening recommendations
 - MITRE ATT&CK technique mapping
 
-#### Investigation Categories
-
-Investigations are grouped by attack type and intrusion phase:
+#### Investigation Categories (Investigations are grouped by attack type and intrusion phase)
 
 | Category | What It Covers |
 |--------|------------------|
@@ -69,9 +67,7 @@ Instead of full incidents, these workflows model:
 - how investigation pivots are performed
 - how findings are documented for escalation or handoff
 
-#### Workflow Categories
-
-Workflows are grouped by operational function:
+#### Workflow Categories (Workflows are grouped by operational function)
 
 | Category | What It Covers |
 |--------|------------------|
@@ -105,7 +101,6 @@ These workflows are designed to show **how analysts think, not just what actions
 **Repository:** `soc-playbooks-and-procedures`
 
 This repository contains **operational playbooks** focused on how security teams respond once suspicious or malicious activity is confirmed. This repository is under active development and will continue expanding as additional response scenarios and procedures are added.
-
 
 These documents model:
 - escalation paths and decision points
