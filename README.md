@@ -39,7 +39,9 @@ This repository contains full **case-style investigations** designed to simulate
 - detection and hardening recommendations
 - MITRE ATT&CK technique mapping
 
-#### Investigation Categories (Investigations are grouped by attack type and intrusion phase)
+#### Investigation Categories
+
+Investigations are grouped by attack type and intrusion phase:
 
 | Category | What It Covers |
 |--------|------------------|
@@ -67,7 +69,9 @@ Instead of full incidents, these workflows model:
 - how investigation pivots are performed
 - how findings are documented for escalation or handoff
 
-#### Workflow Categories (Workflows are grouped by operational function)
+#### Workflow Categories
+
+Workflows are grouped by operational function:
 
 | Category | What It Covers |
 |--------|------------------|
