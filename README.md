@@ -50,16 +50,18 @@ Investigations are grouped by attack type and intrusion phase:
 | Intrusion & Lateral Movement | Network-based compromise, credential access, and internal pivoting techniques |
 | Web Application Compromise | Web shell deployment, vulnerable services, and attacker interaction with servers |
 
-Each category folder contains multiple investigations, and **each investigation uses the same standardized case structure** to reflect real incident documentation workflows.
+Each category folder contains multiple investigations, with **each investigation fully self-contained within its own dedicated subfolder**. Every investigation follows the same standardized case structure to reflect real incident documentation workflows.
 
 👉 **Start here:**  
 `incident-response-and-investigations/`
+[Incident Response and Investigations Repository](https://github.com/ahnpj/incident-response-and-investigations)
 
 ---
 
 ### (2) Security Operations Workflows
 
 **Repository:** `security-operations-workflows`
+[Security Operations Workflows Repository](https://github.com/ahnpj/security-operations-workflows)
 
 This repository focuses on **task-first SOC workflows** — the repeatable procedures analysts perform during monitoring, triage, and investigation activities. These workflows are written so they can later be translated into SIEM detections, automation pipelines, and SOAR playbooks.
 
