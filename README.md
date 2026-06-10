@@ -52,6 +52,19 @@ Investigations are grouped by attack type and intrusion phase:
 
 Each category folder contains multiple investigations, with **each investigation fully self-contained within its own dedicated subfolder**. Every investigation follows the same standardized case structure to reflect real incident documentation workflows.
 
+#### Standard Investigation Files
+
+Each investigation includes:
+
+- `README.md` — case overview, scenario background, objectives, evidence sources, and key findings
+- `incident-summary.md` — executive-level summary of the incident, impact, scope, and outcome
+- `case-report.md` — detailed investigative report documenting evidence analysis, findings, and conclusions
+- `investigation-walkthrough.md` — step-by-step investigation process showing how evidence was collected, analyzed, and validated
+- `incident-response-report.md` — containment, eradication, recovery, and response activities performed throughout the incident
+- `detection-artifact-report.md` — forensic artifacts, indicators, observables, and evidence identified during the investigation
+- `MITRE-ATT&CK-mapping.md` — adversary behavior mapping to ATT&CK tactics, techniques, and procedures (TTPs)
+- `detection-and-hardening-recommendations.md` — detection improvements, defensive controls, and hardening recommendations derived from investigation findings
+
 👉 **Start here:**  
 `incident-response-and-investigations/`
 [Incident Response and Investigations Repository](https://github.com/ahnpj/incident-response-and-investigations)
@@ -76,13 +89,16 @@ Instead of full incidents, these workflows model:
 Workflows are grouped by operational function:
 
 | Category | What It Covers |
-|--------|------------------|
+|----------|----------------|
 | Detection Automation & Log Processing | Custom parsing, enrichment, and behavioral signal development |
 | Endpoint Triage | Host artifact review, process analysis, and persistence checks |
 | Identity & Access | Authentication review, account misuse detection, and IAM validation |
 | Network Traffic Analysis | Packet inspection, suspicious flow detection, and protocol analysis |
 | SIEM Detection & Log Analysis | Alert triage, query development, and investigation pivots |
 | Vulnerability Management | Exposure assessment, remediation validation, and risk prioritization |
+| Digital Forensics & Evidence Analysis | Evidence acquisition, disk and memory forensics, artifact analysis, deleted-file investigation, browser forensics, filesystem examination, execution analysis, and user activity reconstruction |
+| Threat Intelligence & Enrichment | IOC analysis, malware attribution, adversary profiling, ATT&CK mapping, indicator enrichment, ransomware research, and intelligence-driven investigations |
+| Email Security & Phishing Analysis | Email header analysis, sender validation, phishing detection, malicious attachment review, URL investigation, and email-based threat analysis |
 
 #### Standard Workflow Files
 
